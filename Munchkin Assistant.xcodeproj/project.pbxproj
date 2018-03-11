@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		15772D372053D3E40032E643 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D362053D3E40032E643 /* AppDelegate.swift */; };
-		15772D392053D3E40032E643 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D382053D3E40032E643 /* ViewController.swift */; };
+		15772D392053D3E40032E643 /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D382053D3E40032E643 /* TableController.swift */; };
 		15772D3C2053D3E40032E643 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15772D3A2053D3E40032E643 /* Main.storyboard */; };
 		15772D3E2053D3E40032E643 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15772D3D2053D3E40032E643 /* Assets.xcassets */; };
 		15772D412053D3E40032E643 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15772D3F2053D3E40032E643 /* LaunchScreen.storyboard */; };
+		15772D4F20541F5A0032E643 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D4E20541F5A0032E643 /* PlayerView.swift */; };
+		15772D53205420000032E643 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D52205420000032E643 /* UIViewExtension.swift */; };
+		15772D59205463630032E643 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D58205463630032E643 /* Player.swift */; };
+		15772D5B20546DDF0032E643 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15772D5A20546DDF0032E643 /* PlayerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15772D332053D3E40032E643 /* Munchkin Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Munchkin Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15772D362053D3E40032E643 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		15772D382053D3E40032E643 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		15772D382053D3E40032E643 /* TableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		15772D3B2053D3E40032E643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15772D3D2053D3E40032E643 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15772D402053D3E40032E643 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15772D422053D3E40032E643 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15772D4E20541F5A0032E643 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		15772D52205420000032E643 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		15772D58205463630032E643 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		15772D5A20546DDF0032E643 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				15772D352053D3E40032E643 /* Munchkin Assistant */,
-				15772D342053D3E40032E643 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,19 +56,57 @@
 				15772D332053D3E40032E643 /* Munchkin Assistant.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		15772D352053D3E40032E643 /* Munchkin Assistant */ = {
 			isa = PBXGroup;
 			children = (
 				15772D362053D3E40032E643 /* AppDelegate.swift */,
-				15772D382053D3E40032E643 /* ViewController.swift */,
 				15772D3A2053D3E40032E643 /* Main.storyboard */,
+				15772D552054202B0032E643 /* Table */,
+				15772D54205420180032E643 /* Views */,
+				15772D56205420460032E643 /* Extend */,
+				15772D57205463440032E643 /* Models */,
 				15772D3D2053D3E40032E643 /* Assets.xcassets */,
 				15772D3F2053D3E40032E643 /* LaunchScreen.storyboard */,
 				15772D422053D3E40032E643 /* Info.plist */,
+				15772D342053D3E40032E643 /* Products */,
 			);
 			path = "Munchkin Assistant";
+			sourceTree = "<group>";
+		};
+		15772D54205420180032E643 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15772D4E20541F5A0032E643 /* PlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15772D552054202B0032E643 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				15772D382053D3E40032E643 /* TableController.swift */,
+				15772D5A20546DDF0032E643 /* PlayerController.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		15772D56205420460032E643 /* Extend */ = {
+			isa = PBXGroup;
+			children = (
+				15772D52205420000032E643 /* UIViewExtension.swift */,
+			);
+			path = Extend;
+			sourceTree = "<group>";
+		};
+		15772D57205463440032E643 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15772D58205463630032E643 /* Player.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15772D392053D3E40032E643 /* ViewController.swift in Sources */,
+				15772D53205420000032E643 /* UIViewExtension.swift in Sources */,
+				15772D4F20541F5A0032E643 /* PlayerView.swift in Sources */,
+				15772D5B20546DDF0032E643 /* PlayerController.swift in Sources */,
+				15772D392053D3E40032E643 /* TableController.swift in Sources */,
+				15772D59205463630032E643 /* Player.swift in Sources */,
 				15772D372053D3E40032E643 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "se.tholendesign.Munchkin-Assistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +345,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "se.tholendesign.Munchkin-Assistant";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
