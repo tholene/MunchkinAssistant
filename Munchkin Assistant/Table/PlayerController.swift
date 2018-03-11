@@ -43,7 +43,7 @@ class PlayerController: UIViewController {
       self.playerDetailDelegate = player
       
       playerImage.image = player.playerImage.image
-      playerImage.isHidden = true
+      playerImage.layer.opacity = 0
       
       playerName.text? = player.getModel().name
       playerLevel.text? = String(player.getModel().getLevel())
@@ -75,7 +75,7 @@ class PlayerController: UIViewController {
   private func runAppearAnimation() {
     let playerCenter = playerImage.center
     playerImage.layer.position = CGPoint(x: -100, y: playerCenter.y)
-    playerImage.isHidden = false
+    playerImage.layer.opacity = 1
     UIImageView.animate(withDuration: 0.1, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: {
       self.playerImage.center = CGPoint(x: playerCenter.x + 15, y: playerCenter.y)
     }, completion: { finished in

@@ -13,7 +13,7 @@ class Player {
   private var level: Int
   private var power: Int
 
-  init(name: String, level: Int = 1, power: Int = 1) {
+  init(name: String, level: Int = 1, power: Int = 0) {
     self.name = name
     self.level = level
     self.power = power

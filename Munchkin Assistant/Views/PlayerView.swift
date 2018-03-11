@@ -46,8 +46,16 @@ class PlayerView: UIView {
     
     // Setup labels
     nameLabel.text = player.name
+    nameLabel.font = UIFont(name: "Chalkduster", size: 20)
+    nameLabel.textColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+    
     levelLabel.text = String(player.getLevel())
+    levelLabel.font = UIFont(name: "Chalkduster", size: 16)
+    levelLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    
     combatPowerLabel.text = String(player.getTotalCombatPower())
+    combatPowerLabel.font = UIFont(name: "Chalkduster", size: 20)
+    combatPowerLabel.textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     
     let tappedLocation = event.location(in: containerView)
   

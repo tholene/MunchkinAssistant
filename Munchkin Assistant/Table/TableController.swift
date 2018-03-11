@@ -51,7 +51,7 @@ class TableController: UIViewController {
         self.addPlayer(view: self.playArea, event: sender)
         
         if playersInArea == 2 {
-          areaTappedIn.borderColor = UIColor.init(white: 1, alpha: 0)
+          renderAreaAsDisabled(areaTappedIn)
         }
       }
     }
@@ -85,6 +85,16 @@ class TableController: UIViewController {
     let playerAreas = [aboveTable, rightOfTable, belowTable, leftOfTable]
     return playerAreas.filter { area in area!.frame.contains(player.center) }[0]!
   }
+  
+  private func renderAreaAsDisabled(_ area: UIView) {
+    area.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 0)
+    area.borderColor = #colorLiteral(red: 0.4989412427, green: 0.3837645054, blue: 0.2459807098, alpha: 0)
+  }
+  
+  private func renderAreaAsEnabled(_ area: UIView) {
+    area.backgroundColor = #colorLiteral(red: 0.937254902, green: 0.937254902, blue: 0.9568627451, alpha: 0.4975652825)
+    area.borderColor = #colorLiteral(red: 0.4989412427, green: 0.3837645054, blue: 0.2459807098, alpha: 1)
+  }
 }
 
 extension TableController: PlayerSelectedDelegate {
@@ -101,8 +111,7 @@ extension TableController: PlayerRemovedDelegate {
       players.remove(at: index)
       
       if getPlayersInArea(areaOfPlayer).count < 3 {
-        let enabledColor = UIColor.init(red: 0.498941, green: 0.383765, blue: 0.245981, alpha: 1)
-        areaOfPlayer.borderColor = enabledColor
+        renderAreaAsEnabled(areaOfPlayer)
       }
     }
   }
