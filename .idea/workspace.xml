@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5b45ed6-adf5-4bbb-a84d-a10cf3b30b6d" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-cartman.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-cartman.imageset/cartman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-cartman.imageset/cartman@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-cartman.imageset/cartman@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kenny.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kenny.imageset/kenny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kenny.imageset/kenny@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kenny.imageset/kenny@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kyle.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kyle.imageset/kyle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kyle.imageset/kyle@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-kyle.imageset/kyle@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-stan.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-stan.imageset/stan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-stan.imageset/stan@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/Player Images/South Park/player-stan.imageset/stan@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/parchment.imageset/Contents.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/parchment.imageset/parchment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Extend/UIViewExtension.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Models/Player.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Table/PlayerController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Table/TableController.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Munchkin Assistant/Views/PlayerView.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant.xcodeproj/project.xcworkspace/contents.xcworkspacedata" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant.xcodeproj/xcuserdata/tholene.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/AppDelegate.swift" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/AppIcon.appiconset/Contents.json" beforeDir="false" afterPath="$PROJECT_DIR$/Munchkin Assistant/Assets.xcassets/AppIcon.appiconset/Contents.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/Base.lproj/LaunchScreen.storyboard" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/Munchkin Assistant/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/Info.plist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Munchkin Assistant/ViewController.swift" beforeDir="false" />
+    </list>
+    <ignored path="$USER_HOME$/Library/Developer/Xcode/DerivedData/Munchkin_Assistant-ghxandqvwbqjxfhdhmejkvheihcy/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_7df587a08094dffe2ea07689102103c8d27ff7eb" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Player.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Models/Player.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerView.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Views/PlayerView.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2474">
+              <caret line="229" column="3" selection-start-line="229" selection-start-column="3" selection-end-line="229" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Table/PlayerController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="57" column="51" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableController.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Table/TableController.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="846">
+              <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>self.playerImage</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>image</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Munchkin Assistant/Table/TableController.swift" />
+        <option value="$PROJECT_DIR$/Munchkin Assistant/Models/Player.swift" />
+        <option value="$PROJECT_DIR$/Munchkin Assistant/Table/PlayerController.swift" />
+        <option value="$PROJECT_DIR$/Munchkin Assistant/Views/PlayerView.swift" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="2371" />
+    <option name="height" value="1418" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Cidr.FilesView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Munchkin Assistant" type="1d218c8b:XcodeProjectNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Munchkin Assistant" type="1d218c8b:XcodeProjectNode" />
+              <item name="Munchkin Assistant" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Munchkin Assistant" type="1d218c8b:XcodeProjectNode" />
+              <item name="Munchkin Assistant" type="fcab9f18:XcodeViewNode" />
+              <item name="Models" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Munchkin Assistant" type="1d218c8b:XcodeProjectNode" />
+              <item name="Munchkin Assistant" type="fcab9f18:XcodeViewNode" />
+              <item name="Table" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Munchkin Assistant" type="1d218c8b:XcodeProjectNode" />
+              <item name="Munchkin Assistant" type="fcab9f18:XcodeViewNode" />
+              <item name="Views" type="fcab9f18:XcodeViewNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Swift" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Munchkin Assistant" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Munchkin Assistant" TARGET_NAME="Munchkin Assistant" CONFIG_NAME="Debug" SCHEME_NAME="Munchkin Assistant" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="Munchkin Assistant" RUN_TARGET_NAME="Munchkin Assistant" MAKE_ACTIVE="TRUE">
+      <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+        <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+      </EXTENSION>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5b45ed6-adf5-4bbb-a84d-a10cf3b30b6d" name="Default" comment="" />
+      <created>1520708638419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520708638419</updated>
+      <workItem from="1520708640361" duration="5298000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5298000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="22" width="2371" height="1418" extended-state="0" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18135808" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" weight="0.3296131" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296131" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Models/Player.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Table/TableController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Table/PlayerController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Munchkin Assistant/Views/PlayerView.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2474">
+          <caret line="229" column="3" selection-start-line="229" selection-start-column="3" selection-end-line="229" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
