@@ -9,7 +9,7 @@
 import Foundation
 
 class Player {
-  var name: String
+  private var name: String
   private var level: Int
   private var power: Int
 
@@ -25,6 +25,22 @@ class Player {
 
   func goDownALevel() {
     self.level -= 1
+  }
+  
+  func addPower() {
+    self.power += 1
+  }
+  
+  func removePower() {
+    self.power -= 1
+  }
+  
+  func getName() -> String {
+    return self.name
+  }
+  
+  func setName(_ name: String) {
+    self.name = name
   }
 
   func getLevel() -> Int {

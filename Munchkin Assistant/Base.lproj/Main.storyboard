@@ -199,122 +199,247 @@
                                 </view>
                                 <blurEffect style="extraLight"/>
                             </visualEffectView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BGx-WJ-Il8" userLabel="Top Row">
-                                <rect key="frame" x="8" y="8" width="651" height="38"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="qv2-6P-iP9">
+                                <rect key="frame" x="8" y="8" width="651" height="359"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-DI-oqb">
-                                        <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                        <state key="normal" title="Done">
-                                            <color key="titleColor" red="0.72223984770000005" green="0.26586627610000002" blue="0.1500530082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="donePressed" destination="C6y-d9-bJO" eventType="touchUpInside" id="YgF-FV-V8o"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zi-oX-SMC">
-                                        <rect key="frame" x="217" y="0.0" width="217" height="38"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
-                                        <color key="textColor" red="0.93822973966598511" green="0.34794366359710693" blue="0.19049206376075745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-Du-94q" userLabel="Edit Name">
-                                        <rect key="frame" x="434" y="0.0" width="217" height="38"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
-                                        <state key="normal" title="Edit Name">
-                                            <color key="titleColor" red="0.72223984771573602" green="0.26586627608816948" blue="0.15005300815628728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-9d-HRZ" userLabel="Middle">
-                                <rect key="frame" x="0.0" y="70" width="667" height="41"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player-cartman" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3O-We-67l">
-                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="41"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="pKR-l4-nqP"/>
-                                        </constraints>
-                                    </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-LO-4gY" userLabel="Fields Stack">
-                                        <rect key="frame" x="333.5" y="0.0" width="333.5" height="41"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BGx-WJ-Il8" userLabel="Top Row">
+                                        <rect key="frame" x="0.0" y="0.0" width="651" height="38"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-Qi-EY1" userLabel="Level Stack">
-                                                <rect key="frame" x="0.0" y="0.0" width="333.5" height="20.5"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgh-DI-oqb">
+                                                <rect key="frame" x="0.0" y="0.0" width="217" height="38"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" red="0.72223984770000005" green="0.26586627610000002" blue="0.1500530082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="donePressed" destination="C6y-d9-bJO" eventType="touchUpInside" id="YgF-FV-V8o"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player Name" placeholder="Player Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Muj-oa-gXi">
+                                                <rect key="frame" x="217" y="0.0" width="217" height="38"/>
+                                                <color key="textColor" red="0.93822884559631348" green="0.35626313090324402" blue="0.19985416531562805" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="24"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" textContentType="name"/>
+                                                <connections>
+                                                    <action selector="endEditName" destination="C6y-d9-bJO" eventType="primaryActionTriggered" id="o0n-oR-aZU"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-Du-94q" userLabel="Edit Name">
+                                                <rect key="frame" x="434" y="0.0" width="217" height="38"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                <state key="normal" title="Edit Name">
+                                                    <color key="titleColor" red="0.72223984771573602" green="0.26586627608816948" blue="0.15005300815628728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="startEditName" destination="C6y-d9-bJO" eventType="touchUpInside" id="mCu-qK-Ga4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cDC-9d-HRZ" userLabel="Middle">
+                                        <rect key="frame" x="0.0" y="91.5" width="651" height="180"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player-cartman" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A3O-We-67l">
+                                                <rect key="frame" x="0.0" y="0.0" width="325.5" height="180"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                </accessibility>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-LO-4gY" userLabel="Fields Stack">
+                                                <rect key="frame" x="325.5" y="0.0" width="325.5" height="180"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-Sx-lWB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-Gq-sx5">
-                                                        <rect key="frame" x="167" y="0.0" width="166.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-eh-1qn" userLabel="Power Stack">
-                                                <rect key="frame" x="0.0" y="20.5" width="333.5" height="20.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwU-mV-ZxT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="167" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4v-7O-TtA">
-                                                        <rect key="frame" x="167" y="0.0" width="166.5" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-Qi-EY1" userLabel="Level Stack">
+                                                        <rect key="frame" x="0.0" y="0.0" width="325.5" height="90"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZE-Sx-lWB">
+                                                                <rect key="frame" x="0.0" y="34.5" width="108.5" height="21.5"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0S9-Gq-sx5">
+                                                                <rect key="frame" x="108.5" y="34.5" width="108.5" height="21.5"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" notEnabled="YES" updatesFrequently="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="XQa-ii-X8s" userLabel="Buttons">
+                                                                <rect key="frame" x="217" y="25" width="108.5" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbi-VS-MN1" userLabel="Decrement">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                                        <state key="normal" title="-">
+                                                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.99948209524154663" green="0.14964362978935242" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="decrementLevel" destination="C6y-d9-bJO" eventType="touchUpInside" id="ISq-h7-b2H"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPP-Tz-72N" userLabel="Increment">
+                                                                        <rect key="frame" x="60.5" y="0.0" width="48" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleColor" red="0.0017649340754046449" green="0.62156963832487311" blue="0.0027384559160051098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.00019713668734766543" green="0.62184721231460571" blue="0.003939005546271801" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="incrementLevel" destination="C6y-d9-bJO" eventType="touchUpInside" id="HR6-aw-ANd"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kbv-eh-1qn" userLabel="Power Stack">
+                                                        <rect key="frame" x="0.0" y="90" width="325.5" height="90"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Power:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwU-mV-ZxT">
+                                                                <rect key="frame" x="0.0" y="34.5" width="108.5" height="21.5"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4v-7O-TtA">
+                                                                <rect key="frame" x="108.5" y="34.5" width="108.5" height="21.5"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" summaryElement="YES" notEnabled="YES" updatesFrequently="YES"/>
+                                                                </accessibility>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pZq-7w-2mA" userLabel="Buttons">
+                                                                <rect key="frame" x="217" y="25" width="108.5" height="40"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2of-mz-uVw" userLabel="Decrement">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="40.5" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                                        <state key="normal" title="-">
+                                                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.99948209519999998" green="0.14964362980000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="decrementPower" destination="C6y-d9-bJO" eventType="touchUpInside" id="x16-wJ-mNC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muU-X0-Qec" userLabel="Increment">
+                                                                        <rect key="frame" x="60.5" y="0.0" width="48" height="40"/>
+                                                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="22"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleColor" red="0.001764934075" green="0.6215696383" blue="0.0027384559160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="10"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" red="0.0001971366873" green="0.62184721229999995" blue="0.0039390055460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="incrementPower" destination="C6y-d9-bJO" eventType="touchUpInside" id="4WQ-rD-N46"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="yhd-B2-OL5">
+                                                        <rect key="frame" x="0.0" y="180" width="325.5" height="0.0"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Has the Munckinomicon:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ml-n3-q1q" userLabel="Book">
+                                                                <rect key="frame" x="0.0" y="0.0" width="269.5" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCx-vf-HdW">
+                                                                <rect key="frame" x="269.5" y="0.0" width="58" height="0.0"/>
+                                                                <color key="onTintColor" red="0.93822973970000001" green="0.34794366360000001" blue="0.1904920638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="180" id="kPL-Ol-8gx"/>
+                                        </constraints>
                                     </stackView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIN-aN-SoI" userLabel="Bottom">
-                                <rect key="frame" x="0.0" y="333" width="667" height="34"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKT-Qt-Vrv">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="34"/>
-                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
-                                        <state key="normal" title="Remove player">
-                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="removePressed" destination="C6y-d9-bJO" eventType="touchUpInside" id="fpF-gS-IaQ"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wIN-aN-SoI" userLabel="Bottom">
+                                        <rect key="frame" x="0.0" y="325" width="651" height="34"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKT-Qt-Vrv">
+                                                <rect key="frame" x="0.0" y="0.0" width="651" height="34"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <state key="normal" title="Remove player">
+                                                    <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="removePressed" destination="C6y-d9-bJO" eventType="touchUpInside" id="fpF-gS-IaQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.49894124270000001" green="0.38376450540000001" blue="0.2459807098" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="8g7-4o-LLi" firstAttribute="top" secondItem="1Ak-PS-l4m" secondAttribute="top" id="0Da-hj-ZJe"/>
-                            <constraint firstItem="BGx-WJ-Il8" firstAttribute="top" secondItem="1Ak-PS-l4m" secondAttribute="top" constant="8" id="8Uk-Gv-n7m"/>
-                            <constraint firstItem="cDC-9d-HRZ" firstAttribute="top" secondItem="BGx-WJ-Il8" secondAttribute="bottom" constant="24" id="AGA-zg-hex"/>
+                            <constraint firstItem="qv2-6P-iP9" firstAttribute="top" secondItem="1Ak-PS-l4m" secondAttribute="top" constant="8" id="BAG-of-02X"/>
                             <constraint firstItem="1Ak-PS-l4m" firstAttribute="bottom" secondItem="8g7-4o-LLi" secondAttribute="bottom" id="CrY-7M-IaG"/>
                             <constraint firstItem="1Ak-PS-l4m" firstAttribute="trailing" secondItem="8g7-4o-LLi" secondAttribute="trailing" id="MOd-Z0-91M"/>
-                            <constraint firstItem="BGx-WJ-Il8" firstAttribute="leading" secondItem="1Ak-PS-l4m" secondAttribute="leading" constant="8" id="Xai-So-WhO"/>
-                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="trailing" secondItem="BGx-WJ-Il8" secondAttribute="trailing" constant="8" id="Y2e-Gm-vnz"/>
-                            <constraint firstItem="wIN-aN-SoI" firstAttribute="leading" secondItem="1Ak-PS-l4m" secondAttribute="leading" id="htm-CJ-EdN"/>
-                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="trailing" secondItem="cDC-9d-HRZ" secondAttribute="trailing" id="jXD-1s-l5D"/>
-                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="bottom" secondItem="wIN-aN-SoI" secondAttribute="bottom" constant="8" id="oER-W7-h5i"/>
+                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="trailing" secondItem="qv2-6P-iP9" secondAttribute="trailing" constant="8" id="dH7-Wl-Azc"/>
                             <constraint firstItem="8g7-4o-LLi" firstAttribute="leading" secondItem="1Ak-PS-l4m" secondAttribute="leading" id="pit-j7-HbM"/>
-                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="trailing" secondItem="wIN-aN-SoI" secondAttribute="trailing" id="qDS-Pc-C5U"/>
-                            <constraint firstItem="cDC-9d-HRZ" firstAttribute="leading" secondItem="1Ak-PS-l4m" secondAttribute="leading" id="qbA-Vt-Gh1"/>
+                            <constraint firstItem="qv2-6P-iP9" firstAttribute="leading" secondItem="1Ak-PS-l4m" secondAttribute="leading" constant="8" id="trt-e9-SJl"/>
+                            <constraint firstItem="1Ak-PS-l4m" firstAttribute="bottom" secondItem="qv2-6P-iP9" secondAttribute="bottom" constant="8" id="uX9-4s-VEE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Ak-PS-l4m"/>
                     </view>
                     <connections>
+                        <outlet property="editNameButton" destination="4zS-Du-94q" id="T05-3z-dHZ"/>
                         <outlet property="playerImage" destination="A3O-We-67l" id="8dB-eu-ztA"/>
                         <outlet property="playerLevel" destination="0S9-Gq-sx5" id="MBg-Fu-J3R"/>
-                        <outlet property="playerName" destination="4zi-oX-SMC" id="BAj-dQ-NYZ"/>
+                        <outlet property="playerNameField" destination="Muj-oa-gXi" id="4yE-85-Y13"/>
                         <outlet property="playerPower" destination="z4v-7O-TtA" id="WiM-FT-JAg"/>
                     </connections>
                 </viewController>

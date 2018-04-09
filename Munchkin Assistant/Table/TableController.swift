@@ -59,14 +59,15 @@ class TableController: UIViewController {
   
   
   private func addPlayer(view: UIView, event: UITapGestureRecognizer) {
-    let player = PlayerView(containerView: view, event: event)
-    player.playerSelectedDelegate = self
-    
-    view.addSubview(player)
-    
-    players.append(player)
-    
-    self.didSelectPlayer(player: player)
+    print("Adding player")
+//    let player = PlayerView(containerView: view, event: event)
+//    player.playerSelectedDelegate = self
+//
+//    view.addSubview(player)
+//
+//    players.append(player)
+//
+//    self.didSelectPlayer(player: player)
   }
   
   private func getPlayersInArea(_ view: UIView) -> [PlayerView] {

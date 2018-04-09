@@ -45,7 +45,7 @@ class PlayerView: UIView {
     player = Player(name: playerImages[randomIndex].capitalized)
     
     // Setup labels
-    nameLabel.text = player.name
+    nameLabel.text = player.getName()
     nameLabel.font = UIFont(name: "Chalkduster", size: 20)
     nameLabel.textColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
     
@@ -215,6 +215,9 @@ class PlayerView: UIView {
 
 extension PlayerView: PlayerDetailDelegate {
   func playerDetailDismissed() {
+    self.levelLabel.text? = String(self.player.getLevel())
+    self.combatPowerLabel.text? = String(self.player.getTotalCombatPower())
+    self.nameLabel.text? = self.player.getName()
     runAppearAnimation()
   }
 }

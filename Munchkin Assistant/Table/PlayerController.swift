@@ -13,16 +13,17 @@ protocol PlayerDetailDelegate {
 }
 
 protocol PlayerRemovedDelegate {
-    func playerRemoved(player: PlayerView)
+  func playerRemoved(player: PlayerView)
 }
 
 class PlayerController: UIViewController {
   var player: PlayerView!
   
   @IBOutlet weak var playerImage: UIImageView!
-  @IBOutlet weak var playerName: UILabel!
+  @IBOutlet weak var playerNameField: UITextField!
   @IBOutlet weak var playerLevel: UILabel!
   @IBOutlet weak var playerPower: UILabel!
+  @IBOutlet weak var editNameButton: UIButton!
   
   var playerDetailDelegate: PlayerDetailDelegate!
   var playerRemovedDelegate: PlayerRemovedDelegate!
@@ -45,7 +46,7 @@ class PlayerController: UIViewController {
       playerImage.image = player.playerImage.image
       playerImage.layer.opacity = 0
       
-      playerName.text? = player.getModel().name
+      playerNameField.text? = player.getModel().getName()
       playerLevel.text? = String(player.getModel().getLevel())
       playerPower.text? = String(player.getModel().getPower())
     }
@@ -63,13 +64,54 @@ class PlayerController: UIViewController {
     let alert = UIAlertController(title: "Delete player?", message: "Are you sure?", preferredStyle: .alert)
     
     alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { result in
-      self.playerRemovedDelegate.playerRemoved(player: self.player!)
-      self.dismiss(animated: true, completion: nil)
+      self.runDisappearAnimation {
+        self.playerRemovedDelegate.playerRemoved(player: self.player!)
+        self.dismiss(animated: true, completion: nil)
+      }
     }))
     
     alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
     
     self.present(alert, animated: true)
+  }
+  
+  @IBAction func startEditName() {
+    if playerNameField.isEnabled {
+      endEditName()
+    } else {
+      playerNameField.isEnabled = true
+      playerNameField.becomeFirstResponder()
+      editNameButton.setTitle("Done", for: UIControlState.normal)
+    }
+  }
+  
+  @IBAction func endEditName() {
+    playerNameField.isEnabled = false
+    playerNameField.resignFirstResponder()
+    player.getModel().setName(playerNameField.text ?? "")
+    editNameButton.setTitle("Edit Name", for: UIControlState.normal)
+  }
+  
+  // Level
+  @IBAction func decrementLevel() {
+    self.player.getModel().goDownALevel()
+    self.playerLevel.text? = String(player.getModel().getLevel())
+  }
+  
+  @IBAction func incrementLevel() {
+    self.player.getModel().goUpALevel()
+    self.playerLevel.text? = String(player.getModel().getLevel())
+  }
+  
+  // Power
+  @IBAction func decrementPower() {
+    self.player.getModel().removePower()
+    self.playerPower.text? = String(player.getModel().getPower())
+  }
+  
+  @IBAction func incrementPower() {
+    self.player.getModel().addPower()
+    self.playerPower.text? = String(player.getModel().getPower())
   }
   
   private func runAppearAnimation() {
